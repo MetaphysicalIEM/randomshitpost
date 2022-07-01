@@ -36,7 +36,7 @@ class _StoryPageState extends State<StoryPage> {
         print('STOP PERIODIC!');
         timer.cancel();
       }
-      print('Time scroll:  ${DateTime.now()}');
+      print('Time :  ${DateTime.now()}');
       autoScrool();
     });
   }
@@ -56,7 +56,6 @@ class _StoryPageState extends State<StoryPage> {
 
   Future<void> readFileAboutCharacter() async {
     debugPrint('reading...');
-
     try {
       final String loadedData =
           await rootBundle.loadString('assets/text/virgil.txt');
